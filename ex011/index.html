@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagem adaptiva</title>
+</head>
+<body>
+    <h1>Mídias</h1>
+    <p>Abrir no PC e mover o tamanho do navegador</p>
+
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="imagem grande">
+    </picture>
+
+    <h1>Áudios</h1>
+    <p>Reproduzindo audios</p>
+    <!--
+        <audio src="midia/Beastie Boys - Sabotage myfreemp3.vip .mp3" controls autoplay></audio>
+    mp3, WAV, OGG
+    -->
+    <audio preload="metadata" controls>
+        <source src="midia/Beastie Boys - Sabotage myfreemp3.vip .mp3" type="audio/mpeg">
+        <p>Negador não suporta mp3 <a href="midia/Beastie Boys - Sabotage myfreemp3.vip .mp3"></a> Clique aqui para baixar</p>
+    </audio>
+    <h1>Vídeos localmente</h1>
+    <video width="700" poster="imagens/2.jpg" controls autoplay>
+        <source src="midia/paisagem.mp4" type="video/mp4">
+        <p>Navegdor não suporta vídeo</p>
+    </video>
+
+    <h1>Vídeo Youtube</h1>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/NIIVfDoN-tc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</body>
+</html>
